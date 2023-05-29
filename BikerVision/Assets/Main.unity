@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 7897079}
   - component: {fileID: 7897080}
   m_Layer: 0
-  m_Name: Reinicio
+  m_Name: ReinicioYamaha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 106867343}
   - component: {fileID: 106867344}
   m_Layer: 0
-  m_Name: Reinicio
+  m_Name: ReinicioBMW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1039,7 +1039,7 @@ GameObject:
   - component: {fileID: 462142073}
   - component: {fileID: 462142074}
   m_Layer: 0
-  m_Name: Reinicio
+  m_Name: ReinicioSuzuki
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1058,7 +1058,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1685346146}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &462142074
 MonoBehaviour:
@@ -2789,7 +2789,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b1358ddf619451a4d8dd521b196f10f3, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1358ddf619451a4d8dd521b196f10f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -3534,8 +3534,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 462142073}
   - {fileID: 1494741082}
+  - {fileID: 462142073}
   m_Father: {fileID: 215135725}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

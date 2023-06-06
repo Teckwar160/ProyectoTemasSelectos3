@@ -5,6 +5,8 @@ using UnityEngine;
 public class Salir : MonoBehaviour
 {
     public void salirApp(){
+
+        // Cerramos la aplicación
         Application.Quit();
     }
 }

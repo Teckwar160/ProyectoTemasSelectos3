@@ -6,14 +6,17 @@ using UnityEngine.EventSystems;
 public class SeleccionarVentana : MonoBehaviour
 {
 
+    // Fichas técnicas de las motocicletas
     public GameObject infoSuzuki;
     public GameObject infoBMW;
     public GameObject infoYamaha;
 
+    // Animaciones de los modelos
     Animation ASuzuki;
     Animation ABMW;
     Animation AYamaha;
 
+    // Definición de estado de visibilidad de las fichas
     bool visibleSuzuki = true;
     bool visibleBMW = true;
     bool visibleYamaha = true;
@@ -21,11 +24,13 @@ public class SeleccionarVentana : MonoBehaviour
     
     void Start()
     {
+        // Obtenemos los componentes de Animation de las fichas
         ASuzuki = infoSuzuki.GetComponent<Animation>();
         ABMW = infoBMW.GetComponent<Animation>();
         AYamaha = infoYamaha.GetComponent<Animation>();
     }
 
+    // Funciones encargadas de activar la animación de las fichas
     public void infoSuzukiPulsada(){
         if(visibleSuzuki){
             ASuzuki["Suzuki"].speed = 1;
@@ -50,6 +55,8 @@ public class SeleccionarVentana : MonoBehaviour
         }
     }
 
+    // Función encargada de ocultar la ficha tecnica que se este mostrando
+    // dentro del canvas
     public void ventanaNoPulsada(){
         string nombreBoton = EventSystem.current.currentSelectedGameObject.name;
 

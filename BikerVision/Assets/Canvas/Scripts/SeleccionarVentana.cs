@@ -55,7 +55,7 @@ public class SeleccionarVentana : MonoBehaviour
         }
     }
 
-    // Función encargada de ocultar la ficha tecnica que se este mostrando
+    // Función encargada de ocultar la ficha técnica que se este mostrando
     // dentro del canvas
     public void ventanaNoPulsada(){
         string nombreBoton = EventSystem.current.currentSelectedGameObject.name;

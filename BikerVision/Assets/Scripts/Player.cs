@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Joystick encarhado de mover la motocicleta
+    // Joystick encargado de mover la motocicleta
     public VariableJoystick control;
 
     // Variables de control de posición

@@ -38,7 +38,7 @@ public class Juego : MonoBehaviour
     }
 
 
-    // Funciones para seleccionar  que modelo se mostrara
+    // Funciones para seleccionar que modelo de motocicleta se utilizará
     public void seleccionMoto1(){
         seleccion = 0;
     }
@@ -62,9 +62,9 @@ public class Juego : MonoBehaviour
     void Update()
     {
         // Condicional que controla el inicio y fin del juego
-        if(inicio && puntaje >= -10){
+        if(inicio && puntaje >= -10 && puntaje < 100){
 
-            // Definicion del jugador dependiendo del target
+            // Definición del jugador dependiendo del target
             switch(seleccion){
                 case 0:
                     target = targetMoto1;
@@ -90,7 +90,7 @@ public class Juego : MonoBehaviour
                     separacion = 0;
                 }
 
-                // Determinación aleatorio de la posición de las cajas
+                // Determinación aleatoria de la posición de las cajas
                 numeroAleatorio = Random.Range(0f, 2f);
 
                 switch(numeroAleatorio){
@@ -112,7 +112,7 @@ public class Juego : MonoBehaviour
                 nuevaCaja.transform.position = new Vector3(jugador.position.x+15+separacion, jugador.position.y, jugador.position.z + cambio);
                 nuevaCaja.transform.rotation = Quaternion.identity;
 
-                // Se agrega a una lista para tener un control de las mismas
+                // Se agrega a una lista la instancia para tener un control de las mismas
                 listaCajas.Add(nuevaCaja);
                 numCajas++;
             }

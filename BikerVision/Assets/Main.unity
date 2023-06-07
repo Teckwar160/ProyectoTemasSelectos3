@@ -719,8 +719,8 @@ MonoBehaviour:
   jugadorMoto2: {fileID: 1494741082}
   targetMoto3: {fileID: 925741680}
   jugadorMoto3: {fileID: 7432705763706532147}
-  puntaje: 0
   caja: {fileID: 791585221809748309, guid: bbb5b978e8cd2ba4c9af6ee37bd72c2b, type: 3}
+  puntaje: 0
 --- !u!1 &342406466
 GameObject:
   m_ObjectHideFlags: 0
